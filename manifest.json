@@ -2,19 +2,17 @@
 	"manifest_version": 2,
 	"name": "Mattermost Chrome App",
 	"description": "Mattermost Chrome App Wrapper",
-	"version": "1.3",
+	"version": "1.4",
 	"icons": {
 		"128": "128.png"
 	},
 	"app": {
-		"urls": [
-			"http://mattermost.example.com/your-url/"
-			],
-		"launch": {
-			"web_url": "http://mattermost.example.com/your-url/"
-		}
+		"background": {
+			"scripts": ["main.js"]
+    		}
 	},
 	"permissions": [
+		"webview",
 		"unlimitedStorage",
 		"notifications"
 	]
